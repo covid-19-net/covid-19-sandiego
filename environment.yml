@@ -1,0 +1,25 @@
+name: covid-19-sandiego 
+
+channels:
+  - conda-forge
+  - anaconda
+  - esri
+
+dependencies:
+  - python>=3.8
+  - openjdk=11.0.1
+  - jupyterlab=2.1.1
+  - pandas
+  - xlrd
+  - matplotlib
+  - biopython
+  - papermill=2.1.0
+  - widgetsnbextension
+  - ipywidgets
+  - arcgis=1.8.1
+  - pip
+  - pip:
+    - rcsbsearch==0.2.1
+# Instruct pip to use the prerelease version of py2neo (required to access database by name)
+    - --pre
+    - py2neo
